@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { API } from "../utils/api";
 import { useNavigate, Link } from "react-router-dom";
 import Auth from "../components/Auth.scss";
 import { PostLogin } from "../api/auth";
@@ -7,12 +6,7 @@ import { PostLogin } from "../api/auth";
 const Login = () => {
   const token = localStorage.getItem("access_token");
   const navigate = useNavigate();
-  useEffect(() => {
-    if (token) {
-      navigate("/todo");
-      alert("로그인한 사용자 입니다.");
-    }
-  }, []);
+
   const [user, setUser] = useState({
     email: "",
     password: "",
@@ -21,6 +15,13 @@ const Login = () => {
     email: false,
     password: false,
   });
+
+  useEffect(() => {
+    if (token) {
+      navigate("/todo");
+      alert("로그인한 사용자 입니다.");
+    }
+  }, []);
 
   const loginSubmit = () => {
     PostLogin(user);

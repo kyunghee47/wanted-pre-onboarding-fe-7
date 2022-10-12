@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { MdEdit, MdDelete, MdCancel } from "react-icons/md";
 import { BsCircle, BsCheckCircle } from "react-icons/bs";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { deleteTodo, updateTodo } from "../api/todo";
 import Input from "../components/Input.scss";
 
@@ -40,7 +40,7 @@ const TodoListItem = ({ todos, setIsUpdated }) => {
     setChange(false);
   };
   const onToggle = () => {
-    if (value.isCheck == false) {
+    if (value.isCheck === false) {
       setValue({ ...value, isCheck: true });
     } else {
       setValue({ ...value, isCheck: false });

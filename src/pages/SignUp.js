@@ -6,12 +6,7 @@ import { PostSignUp } from "../api/auth";
 const SignUp = () => {
   const token = localStorage.getItem("access_token");
   const navigate = useNavigate();
-  useEffect(() => {
-    if (token) {
-      navigate("/todo");
-      alert("로그인한 사용자 입니다.");
-    }
-  }, []);
+
   const [user, setUser] = useState({
     email: "",
     password: "",
@@ -20,6 +15,13 @@ const SignUp = () => {
     email: false,
     password: false,
   });
+
+  useEffect(() => {
+    if (token) {
+      navigate("/todo");
+      alert("로그인한 사용자 입니다.");
+    }
+  }, []);
 
   const signUpubmit = () => {
     PostSignUp(user);

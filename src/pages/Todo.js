@@ -42,7 +42,6 @@ const Todo = () => {
       </MdLogout>
       <br />
       <div className="app-title">{dateString}</div>
-
       <CreateTodo setIsUpdated={setIsUpdated} />
       <TodoList todo={todo} setIsUpdated={setIsUpdated} />
     </div>
