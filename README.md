@@ -1,9 +1,9 @@
 # wanted 프리온보딩 프론트엔드 코스 선발 과제 
 
 ## 데모영상
-
-<img src="https://user-images.githubusercontent.com/96763714/195299382-af8976c2-235d-49b7-9de9-6db83606d07d.gif">
-
+<p align="center">
+<img src="https://user-images.githubusercontent.com/96763714/195307920-f9fdae2e-a1b9-4c5f-afe6-b1d6af38aa4f.gif" width="600" height="300" >
+</p>
 
 ## 프로젝트 실행방법 
 
