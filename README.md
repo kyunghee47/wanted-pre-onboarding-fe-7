@@ -18,7 +18,7 @@ $npm start
 - SASS
 - React-icon
 
-## 과제
+## 과제 구현
 
 ### 로그인/ 회원가입
 - [x] Assignment1
